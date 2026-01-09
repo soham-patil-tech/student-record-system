@@ -134,8 +134,11 @@ void updateStudent() {
         if (s.roll == roll) {
             printf("New Name  : ");
             scanf(" %[^\n]", s.name);
-            printf("New Marks: ");
-            scanf("%f", &s.marks);
+           do {
+    printf("New Marks (0–100): ");
+    scanf("%f", &s.marks);
+} while (s.marks < 0 || s.marks > 100);
+
 
             fseek(fp, -sizeof(s), SEEK_CUR);
             fwrite(&s, sizeof(s), 1, fp);
@@ -327,4 +330,5 @@ int main() {
 
     return 0;
 }
+
 
