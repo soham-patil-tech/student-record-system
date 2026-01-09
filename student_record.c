@@ -87,8 +87,10 @@ void addStudent() {
     printf("Enter Name        : ");
     scanf(" %[^\n]", s.name);
 
-    printf("Enter Marks       : ");
+ do {
+    printf("Enter Marks (0–100): ");
     scanf("%f", &s.marks);
+} while (s.marks < 0 || s.marks > 100);
 
     fwrite(&s, sizeof(s), 1, fp);
     fclose(fp);
@@ -325,3 +327,4 @@ int main() {
 
     return 0;
 }
+
