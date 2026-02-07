@@ -26,6 +26,9 @@ This project demonstrates core C programming concepts and is ideal for BCA stude
 ---
 
 ## 📂 Project Structure
+
+```
 student-record-system/
 ├── student_record.c
 └── README.md
+```
