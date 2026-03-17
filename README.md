@@ -12,7 +12,6 @@ This project demonstrates core C programming concepts and is ideal for BCA stude
 - Search student by roll number
 - Delete student record
 - File handling using `.dat` file
-- Menu-driven console application
 
 ---
 
